@@ -33,3 +33,19 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# Breadth First Search (BFS) for Undirected Graph
+# Time Complexity:
+# Best Case  : O(V + E) 
+# Worst Case : O(V + E)
+
+# Explanation:
+# In BFS:
+# - Every vertex is visited exactly once.
+# - Every edge is explored exactly once.
+
+
+# Space Complexity:
+# Best Case  : O(V)
+# Worst Case : O(V)

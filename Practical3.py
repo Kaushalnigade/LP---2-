@@ -1,64 +1,81 @@
-class DisjointSet:
-    def __init__(self, n):
-        self.parent = list(range(n))
+def find(parent, i):
 
-    def find(self, x):
-        if self.parent[x] != x:
-            # Path Compression
-            self.parent[x] = self.find(self.parent[x])
-        return self.parent[x]
+    if parent[i] != i:
+        parent[i] = find(parent, parent[i])
 
-    def union(self, x, y):
-        xroot = self.find(x)
-        yroot = self.find(y)
-
-        if xroot == yroot:
-            return False
-
-        self.parent[yroot] = xroot
-        return True
+    return parent[i]
 
 
-def kruskal_mst(edges, n):
-    # Sort edges based on weight
+def union(parent, x, y):
+
+    parent[x] = y
+
+
+def kruskal(v, edges):
+
     edges.sort(key=lambda x: x[2])
 
-    ds = DisjointSet(n)
-    mst = []
-    total_weight = 0
+    max_vertex = max(max(src, dst) for src, dst, _ in edges) if edges else v - 1
 
-    for u, v, weight in edges:
-        if ds.union(u, v):
-            mst.append((u, v, weight))
-            total_weight += weight
+    parent = list(range(max(v, max_vertex + 1)))
 
-    return mst, total_weight
+    result = []
+    cost = 0
+
+    for src, dst, w in edges:
+
+        root_u = find(parent, src)
+        root_v = find(parent, dst)
+
+        if root_u != root_v:
+
+            result.append((src, dst, w))
+            cost += w
+
+            union(parent, root_u, root_v)
+
+    print("\nEdges in Minimum Spanning Tree:")
+
+    for u, v, w in result:
+        print(f"{u} -- {v} == {w}")
+
+    print(f"Minimum Cost = {cost}")
 
 
-# Define edges (u, v, weight)
-edges = [
-    (0, 1, 4),
-    (0, 7, 8),
-    (1, 2, 8),
-    (1, 7, 11),
-    (2, 3, 7),
-    (2, 8, 2),
-    (2, 5, 4),
-    (3, 4, 9),
-    (3, 5, 14),
-    (4, 5, 10),
-    (5, 6, 2),
-    (6, 7, 1),
-    (6, 8, 6),
-    (7, 8, 7),
-]
+vertices = int(input("Enter number of vertices: "))
+e = int(input("Enter number of edges: "))
 
-n = 9  # Number of vertices (0 to 8)
+edges = []
 
-mst, total_weight = kruskal_mst(edges, n)
+print("Enter edges (u v weight):")
 
-print("Edges in MST:")
-for u, v, weight in mst:
-    print(f"{u} - {v}: {weight}")
+for _ in range(e):
 
-print(f"Total weight of MST: {total_weight}")
+    u, v, w = map(int, input().split())
+
+    edges.append([u, v, w])
+
+kruskal(vertices, edges)
+
+
+
+#Krushkal's Algo 
+#Time Complexity :- 
+#Best Case = O(E logE)
+#Worst Case = O(E logE)
+
+#Space Complexity 
+# best case and worst case = O(V+E)
+
+
+
+
+#Prim's Algo 
+#Time Complexity and Space Complexity Using Adjacency Matrix
+#Best Case	O(V²)
+#Worst Case	O(V²)
+
+
+#Time Complexity and Space Complexity  Using Priority Queue + Adjacency List
+#Best Case	O(E log V)
+#Worst Case	O(E log V)

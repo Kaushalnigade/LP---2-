@@ -28,3 +28,20 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+
+# Time Complexity of DFS:
+# Best Case  : O(V + E)
+# Worst Case : O(V + E)
+
+# Space Complexity of DFS:
+# Best Case  : O(V)
+# Worst Case : O(V)
+
+# DFS uses Stack / Recursion.
+# Every vertex and edge is visited once.
+# Hence complexity is O(V + E).
+
+# For Undirected Graph:
+# Each edge is visited twice in adjacency list
+# but overall complexity remains O(V + E).
