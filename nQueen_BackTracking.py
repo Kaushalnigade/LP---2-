@@ -72,6 +72,24 @@ else:
 
 
 
+#Branch and Bound is an optimized version of Backtracking.
+
+#Backtracking
+#Try solution
+#↓
+#Check slowly
+#↓
+#Undo if wrong
+
+
+#branch Bound
+#Try solution
+#↓
+#Quickly reject bad paths
+#↓
+#Faster solution
+
+
 # Backtracking:
 # Try a solution.
 # If it fails,
@@ -91,3 +109,10 @@ else:
 
 # Space Complexity:
 # O(N²)
+
+# Both have worst case time complexity O(N!)
+# and space complexity O(N²).
+#
+# But Branch and Bound is faster practically
+# because it uses O(1) set checking,
+# while Backtracking uses O(N) loops.
