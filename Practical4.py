@@ -59,3 +59,39 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+
+# ============================================================
+# N-Queen Problem
+# Place N queens on N×N chessboard
+# so no two queens attack each other.
+# ============================================================
+
+# Backtracking:
+# Try placing queen.
+# If solution fails,
+# remove queen and try another position.
+
+# Branch and Bound:
+# Optimized Backtracking.
+# Reject unsafe positions immediately
+# using sets for faster checking.
+
+# Checks:
+# 1. Same Column
+# 2. Left Diagonal
+# 3. Right Diagonal
+
+# Time Complexity:
+# Worst Case : O(N!)
+
+# Space Complexity:
+# O(N²)
+
+# Difference:
+# Backtracking -> uses loops for checking
+# Branch & Bound -> uses sets (O(1) checking)
+
+# Branch and Bound is faster than Backtracking.
+# ============================================================

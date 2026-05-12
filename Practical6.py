@@ -51,3 +51,51 @@ def triage_system():
 
 if __name__ == "__main__":
     triage_system()
+
+
+
+# ============================================================
+# Expert System / Hospital Triage System
+# ============================================================
+
+# This is a Rule-Based Expert System.
+# It checks patient symptoms
+# and recommends hospital department.
+
+# Main Concepts Used:
+# 1. Expert System
+# 2. Rule-Based AI
+# 3. If-Else Conditions
+# 4. Boolean Values (True/False)
+
+# Program Flow:
+# Patient Details
+# → Symptoms Input
+# → Condition Checking
+# → Department Recommendation
+
+# Symptoms Checked:
+# - Chest Pain
+# - Bleeding
+# - Fever
+# - Injury
+# - Dizziness
+# - Stomach Pain
+
+# Logical Operators Used:
+# AND -> Both conditions true
+# OR  -> Any one condition true
+
+# Advantages:
+# - Fast decision making
+# - Easy to use
+# - Reduces manual work
+
+# Limitations:
+# - Uses fixed rules
+# - No learning capability
+
+# Time Complexity : O(1)
+# Space Complexity : O(1)
+
+# ============================================================
