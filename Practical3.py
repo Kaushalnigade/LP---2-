@@ -59,23 +59,49 @@ kruskal(vertices, edges)
 
 
 
-#Krushkal's Algo 
-#Time Complexity :- 
-#Best Case = O(E logE)
-#Worst Case = O(E logE)
+# KRUSKAL'S ALGORITHM (Minimum Spanning Tree)
 
-#Space Complexity 
-# best case and worst case = O(V+E)
+# Time Complexity:
+# Best Case  : O(E log E)
+# Worst Case : O(E log E)
+
+# Space Complexity:
+# Best Case  : O(V + E)
+# Worst Case : O(V + E)
+
+# Kruskal uses:
+# - Greedy Approach
+# - Sorting
+# - Disjoint Set / Union-Find
+
+# Main operation is sorting the edges.
+# Hence overall complexity = O(E log E)
+
+# PRIM'S ALGORITHM (Minimum Spanning Tree)
+# Time Complexity:
+# Best Case  : O(E log V)
+# Worst Case : O(E log V)
+
+# Space Complexity:
+# Best Case  : O(V + E)
+# Worst Case : O(V + E)
 
 
 
+# Kruskal's Algorithm:
+# - Edge-based algorithm
+# - Selects smallest edge from entire graph
+# - Uses Disjoint Set / Union-Find
+# - Can start from any edge
+# - Best for Sparse Graphs
+# - Requires edge sorting
+# - Cycle detection is needed
 
-#Prim's Algo 
-#Time Complexity and Space Complexity Using Adjacency Matrix
-#Best Case	O(V²)
-#Worst Case	O(V²)
-
-
-#Time Complexity and Space Complexity  Using Priority Queue + Adjacency List
-#Best Case	O(E log V)
-#Worst Case	O(E log V)
+# Prim's Algorithm:
+# - Vertex-based algorithm
+# - Selects smallest edge from current vertex
+# - Uses Priority Queue / Min Heap
+# - Starts from one vertex
+# - Best for Dense Graphs
+# - No edge sorting required
+# - No explicit cycle detection needed
