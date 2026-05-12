@@ -44,3 +44,60 @@ while True:
 
     response = chatbot_response(user_message)
     print("Chatbot:", response)
+
+
+
+
+
+# ============================================================
+# Chatbot System (Rule-Based Chatbot)
+# ============================================================
+
+# This is a Rule-Based Chatbot.
+# It gives replies based on predefined rules.
+
+# Main Concepts Used:
+# 1. Chatbot
+# 2. Rule-Based AI
+# 3. Regular Expressions (re)
+# 4. Dictionary
+# 5. Functions
+# 6. Looping
+
+# Main Working:
+# User Input
+# → Pattern Matching
+# → Response Generation
+
+# re module:
+# Used for Regular Expression
+# and pattern matching.
+
+# lower():
+# Converts input into lowercase.
+
+# strip():
+# Removes extra spaces.
+
+# Dictionary:
+# Stores chatbot patterns and responses.
+
+# while True:
+# Creates continuous conversation loop.
+
+# Advantages:
+# - Fast responses
+# - Easy implementation
+# - User friendly
+
+# Limitations:
+# - No self-learning
+# - Fixed responses only
+
+# Time Complexity : O(N)
+# Space Complexity : O(N)
+
+# Where:
+# N = Number of chatbot patterns
+
+# ============================================================
