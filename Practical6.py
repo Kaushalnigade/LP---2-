@@ -98,4 +98,18 @@ if __name__ == "__main__":
 # Time Complexity : O(1)
 # Space Complexity : O(1)
 
+
+#Patient Details
+#      ↓
+#Symptoms Input
+#      ↓
+#Boolean Conversion
+#      ↓
+#Condition Checking
+#      ↓
+#Department Selection
+#      ↓
+#Advice Generation
+
+
 # ============================================================
