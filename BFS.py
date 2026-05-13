@@ -49,3 +49,43 @@ if __name__ == "__main__":
 # Space Complexity:
 # Best Case  : O(V)
 # Worst Case : O(V)
+
+
+#3. What is BFS?
+# -> BFS traverses graph level by level.
+#
+#4. What data structure is used in BFS?
+# -> Queue
+
+
+#7. Why visited set is needed?
+#To avoid:
+#   -revisiting nodes
+#   -infinite loops
+
+#8. Which traversal guarantees shortest path in unweighted graph?
+#   -BFS
+# Because it explores level by level.
+
+
+# BFS uses:
+
+# 1. add()
+# Used to add node into visited set.
+
+#     -> visited.add(node)
+
+# 2. append()
+# Used to insert element into queue.
+
+#     -> queue.append(node)
+
+# 3. pop(0)
+# Removes first element from queue (FIFO).
+
+#     -> queue.pop(0)
+
+# 4. print()
+# Used to display traversal.
+
+#      -> print(node)

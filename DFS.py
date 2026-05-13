@@ -45,3 +45,39 @@ if __name__ == "__main__":
 # For Undirected Graph:
 # Each edge is visited twice in adjacency list
 # but overall complexity remains O(V + E).
+
+
+#1. What is DFS?
+#   -> DFS is a graph traversal algorithm that explores nodes deeply before backtracking.
+
+#2. What data structure is used in DFS?
+# -> Stack
+# -> Recursion
+
+
+#7. Why visited set is needed?
+#To avoid:
+#   -revisiting nodes
+#   -infinite loops
+
+#8. Which traversal guarantees shortest path in unweighted graph?
+#   -BFS
+# Because it explores level by level.
+
+
+# DFS uses:
+
+# 1. add()
+# Used to add node into visited set.
+
+#    -> visited.add(node)
+
+# 2. print()
+# Used to display traversal.
+
+#    -> print(node)
+
+# 3. recursion (function call)
+# Function calls itself repeatedly.
+
+#    -> dfs(visited, graph, neighbour)
