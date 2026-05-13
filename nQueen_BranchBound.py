@@ -60,19 +60,20 @@ else:
 
 #Backtracking
 #Try solution
-#↓
+#    ↓
 #Check slowly
-#↓
+#    ↓
 #Undo if wrong
 
 
 #branch Bound
 #Try solution
-#↓
+#     ↓
 #Quickly reject bad paths
-#↓
+#     ↓
 #Faster solution
 
+#----------------------------------------------------------
 
 # Branch and Bound:
 # Try a solution.
@@ -91,6 +92,8 @@ else:
 # Faster than normal Backtracking
 # because checking is done in O(1).
 
+#------------------------------------------------------
+
 # Time Complexity:
 # Worst Case : O(N!)
 
@@ -103,3 +106,19 @@ else:
 # But Branch and Bound is faster practically
 # because it uses O(1) set checking,
 # while Backtracking uses O(N) loops.
+
+# Backtracking checks rows and diagonals
+# using loops one by one.
+
+# So checking takes more time:
+# O(N)
+
+# Branch and Bound uses sets.
+# Sets check values instantly.
+
+# So checking becomes faster:
+# O(1)
+
+# Simple Meaning:
+# Backtracking -> slow checking using loops
+# Branch & Bound -> fast checking using sets
