@@ -134,3 +134,45 @@ while True:
             print("Invalid input!")
 
     print_board(board)
+
+
+# ============================================================
+# Tic-Tac-Toe using Minimax + Heuristic (A* Idea)
+# ============================================================
+
+# Main Concepts Used:
+# 1. Minimax Algorithm
+# 2. Heuristic Function
+# 3. A* Idea
+# 4. Recursion
+# 5. Backtracking
+
+# Minimax:
+# Computer tries to maximize score.
+# Player tries to minimize score.
+
+# Heuristic Function:
+# Estimates board quality
+# and winning chances.
+
+# A* Formula:
+# f(n) = g(n) + h(n)
+
+# g(n) -> Minimax Score
+# h(n) -> Heuristic Score
+
+# Important Functions:
+# print_board()     -> Displays board
+# check_winner()   -> Checks winner/draw
+# heuristic()      -> Evaluates board
+# get_moves()      -> Finds empty positions
+# minimax()        -> AI decision making
+# find_best_move() -> Selects best move
+
+# Backtracking:
+# Undo move after checking future possibilities.
+
+# Time Complexity : O(9!)
+# Space Complexity : O(9)
+
+# ============================================================
