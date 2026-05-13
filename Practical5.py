@@ -100,4 +100,19 @@ while True:
 # Where:
 # N = Number of chatbot patterns
 
+
+#2. Which module is used?
+#   ANS -> re  (Regular Expression)
+
+#3. What is regex?
+#Regex means:
+#Regular Expression
+#Used for pattern matching.
+
+#5. Why use dictionary?
+#To store:
+#    -patterns
+#    -responses
+#efficiently.
+
 # ============================================================
