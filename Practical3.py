@@ -69,6 +69,46 @@ kruskal(vertices, edges)
 # Best Case  : O(V + E)
 # Worst Case : O(V + E)
 
+#---------------------------------------------------
+
+#What is Kruskal’s Algorithm?
+#     -> Kruskal’s Algorithm is a:
+
+#Greedy Algorithm
+#  used to find:
+#     -> Minimum Spanning Tree (MST)
+
+# Union-Find is a data structure
+# used to detect cycles in graphs.
+
+# It performs 2 operations:
+
+# 1. Find  -> Finds parent/root node
+# 2. Union -> Connects two sets/nodes
+
+# Mainly used in Kruskal’s Algorithm.
+
+# Why sort edges?
+# To select minimum cost edge first.
+
+# What is cycle detection?
+# Checking whether adding edge creates loop.
+
+# What is Disjoint Set / Union-Find?
+# Data structure used for:
+# 1. Union operation
+# 2. Find operation
+
+# What is Path Compression?
+# Optimization technique in Union-Find
+# to make searching faster.
+
+# Why use Greedy Approach?
+# Because Kruskal always selects
+# minimum weight edge first.
+
+#--------------------------------------------------------
+
 # Kruskal uses:
 # - Greedy Approach
 # - Sorting
@@ -86,7 +126,7 @@ kruskal(vertices, edges)
 # Best Case  : O(V + E)
 # Worst Case : O(V + E)
 
-
+#----------------------------------------
 
 # Kruskal's Algorithm:
 # - Edge-based algorithm
